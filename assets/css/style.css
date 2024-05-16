@@ -22,6 +22,7 @@ h6 {
     font-size:14px;
 }
 
+/* navigation */
 header nav ul {
     display: flex;
     flex-wrap: wrap;
@@ -52,6 +53,23 @@ header nav ul li a {
     font-weight: bold;
     display: inline;
     margin-right: -0.6em;
+}
+
+/* hide dropdown content by default */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    z-index: 2;
+}
+
+/* clear floats after the dropdown */
+.dropdown:after {
+    content: "";
+    clear: both;
+    display: table;
 }
 
 /* hero style start */
