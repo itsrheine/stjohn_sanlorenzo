@@ -57,12 +57,27 @@
         </script>
 
         <!-- hero/jumbotron -->
-        <section class="hero">
-            <div class="image-container">
-                <img src="./assets/images/SLZWelcome.png" alt="Welcome"/>
-            </div>
-        </section>
+        <div class="main-photo">
+            <img src="./assets/images/SLZMission.png" alt="Main Photo" id="main-photo">
+        </div>
+        <div class="thumbnails">
+            <img src="./assets/images/SLZMission.png" alt="Thumbnail 1" onclick="changePhoto('./assets/images/SLZMission.png')">
+        </div>
+        <div class="thumbnails">
+            <img src="./assets/images/SLZVision.png" alt="Thumbnail 2" onclick="changePhoto('./assets/images/SLZVision.png')">
+        </div>
+        <div class="thumbnails">
+            <img src="./assets/images/SLZPurpose.png" alt="Thumbnail 3" onclick="changePhoto('./assets/images/SLZPurpose.png')">
+        </div>
 
+        <!-- javascript -->
+        <script>
+            function changePhoto(photoSrc)
+            {
+                document.getElementById('main-photo').src = photoSrc;
+            }
+        </script>
+        
         <!-- "Mass Schedule" section -->
         <h2 class="mass-schedule">MASS SCHEDULE</h2>
         <div class="schedule">
